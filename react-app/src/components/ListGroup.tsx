@@ -1,5 +1,5 @@
 
-function ListGrop() {
+function ListGroup() {
     return (
         <>
             <h1>List</h1>
@@ -13,4 +13,4 @@ function ListGrop() {
         </>
     )
 }
-export default ListGrop;
+export default ListGroup;
