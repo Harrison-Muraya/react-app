@@ -1,17 +1,43 @@
 
 function ListGroup() {
-    const cities = ["New York", "Los Angeles", "Chicago", "Houston", "Philadelphia"];
+    let cities = ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "Eldoret"]
+
+    cities = []
+
+    if(cities.length===0){
+        return(
+            <>
+            <h1>List</h1>
+            <p>No city found</p>
+            </>
+        )
+    }
 
     return (
         <>
             <h1>List</h1>
             <ul className="list-group">
-                {cities.map((city) => (<li className="list-group-item">{city}</li>))}
+                {cities.map((city) => (<li key={city} className="list-group-item">{city}</li>))}
             </ul>
         </>
     )
 }
 export default ListGroup;
+
+
+// function ListGroup() {
+//     const cities = ["New York", "Los Angeles", "Chicago", "Houston", "Philadelphia"];
+
+//     return (
+//         <>
+//             <h1>List</h1>
+//             <ul className="list-group">
+//                 {cities.map((city) => (<li key={city} className="list-group-item">{city}</li>))}
+//             </ul>
+//         </>
+//     )
+// }
+// export default ListGroup;
 
 
 // function ListGroup() {
