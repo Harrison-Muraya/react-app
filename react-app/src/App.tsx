@@ -1,7 +1,7 @@
-import ListGrop from "./components/ListGroup"
+import ListGroup from "./components/ListGroup"
 
 function App(){
-  return <div className=""><ListGrop/></div>
+  return <div className=""><ListGroup/></div>
 }
 export default App;
 
